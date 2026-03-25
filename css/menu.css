@@ -1,0 +1,55 @@
+/* ═══ MENU PAGE ═══ */
+.filter-bar {
+  display:flex; gap:8px; flex-wrap:wrap; margin-bottom:44px;
+}
+.ftab {
+  background:transparent; border:1px solid var(--border);
+  color:var(--muted); padding:10px 22px;
+  font-size:.76rem; letter-spacing:.1em; text-transform:uppercase;
+  font-family:var(--font-body); transition:all .3s; cursor:pointer;
+}
+.ftab:hover { border-color:var(--orange); color:var(--orange-lt); }
+.ftab.active { background:var(--orange); border-color:var(--orange); color:#fff; }
+
+.menu-grid {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:1px; background:var(--border2); border:1px solid var(--border2);
+}
+.menu-card {
+  background:var(--card); padding:36px 30px;
+  position:relative; overflow:hidden;
+  transition:background .4s, opacity .3s, transform .3s;
+}
+.menu-card.hidden { display:none; }
+.menu-card::after {
+  content:''; position:absolute; top:0; left:0; right:0; height:2px;
+  background:linear-gradient(to right, var(--orange), var(--orange-lt));
+  transform:scaleX(0); transition:transform .45s;
+}
+.menu-card:hover { background:#201208; }
+.menu-card:hover::after { transform:scaleX(1); }
+
+.mc-top { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px; }
+.mc-emoji { font-size:2.2rem; }
+.mc-badge {
+  font-size:.63rem; font-weight:600; letter-spacing:.1em;
+  text-transform:uppercase; background:var(--bg3); color:var(--muted);
+  border:1px solid var(--border); padding:4px 10px;
+}
+.mc-badge.hot { background:var(--orange); border-color:var(--orange); color:#fff; }
+.mc-name { font-family:var(--font-display); font-size:1.2rem; color:var(--beige); margin-bottom:10px; line-height:1.3; }
+.mc-desc { font-size:.82rem; color:var(--muted); line-height:1.75; margin-bottom:22px; font-weight:300; }
+.mc-footer { display:flex; justify-content:space-between; align-items:center; }
+.mc-price { font-family:var(--font-italic); font-style:italic; font-size:1.1rem; color:var(--orange); }
+.mc-tag   { font-size:.71rem; color:var(--muted); letter-spacing:.06em; }
+
+.menu-note {
+  margin-top:52px; text-align:center;
+  padding:32px; border:1px solid var(--border2); background:var(--card);
+  display:flex; flex-direction:column; align-items:center;
+}
+.menu-note p { font-size:.86rem; color:var(--muted); line-height:1.7; }
+.menu-note strong { color:var(--beige); }
+
+@media(max-width:900px){ .menu-grid{ grid-template-columns:1fr 1fr; } }
+@media(max-width:600px){ .menu-grid{ grid-template-columns:1fr; } }

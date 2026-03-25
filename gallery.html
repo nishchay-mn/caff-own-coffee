@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Gallery — Caff Own Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Cormorant+Garamond:ital,wght@1,300;1,500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/gallery.css"/>
+</head>
+<body class="noscroll">
+
+<div class="loader">
+  <div class="loader-logo">Caff <em>Own</em> Coffee</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <p class="loader-msg">Loading the vibes...</p>
+</div>
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="ring"></div>
+
+<div class="mob-overlay" id="mobOv">
+  <button class="mob-close" id="mobCl">✕</button>
+  <nav style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+    <a href="index.html" class="mob-link">Home</a>
+    <a href="about.html" class="mob-link">About</a>
+    <a href="menu.html"  class="mob-link">Menu</a>
+    <a href="gallery.html" class="mob-link">Gallery</a>
+    <a href="contact.html" class="mob-link">Contact</a>
+  </nav>
+  <div class="mob-info"><p>077270 66475</p><p>Open till 12 AM · Every Day</p></div>
+</div>
+
+<header class="navbar">
+  <a href="index.html" class="nav-logo">Caff <em>Own</em> Coffee</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Reserve a Spot</a>
+  <button class="hamburger" id="ham"><span></span><span></span><span></span></button>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-grain"></div>
+  <div class="page-hero-num">04</div>
+  <div class="container">
+    <p class="page-hero-eyebrow">Atmosphere</p>
+    <h1 class="page-hero-title">Life at <em>Caff Own</em></h1>
+  </div>
+</section>
+
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>120+ Photos</span><span class="sep">✦</span><span>Interior Vibes</span><span class="sep">✦</span><span>Food &amp; Drinks</span><span class="sep">✦</span><span>Night Ambiance</span><span class="sep">✦</span><span>Daytime Seating</span><span class="sep">✦</span><span>Cozy Corners</span><span class="sep">✦</span>
+    <span>120+ Photos</span><span class="sep">✦</span><span>Interior Vibes</span><span class="sep">✦</span><span>Food &amp; Drinks</span><span class="sep">✦</span><span>Night Ambiance</span><span class="sep">✦</span><span>Daytime Seating</span><span class="sep">✦</span><span>Cozy Corners</span><span class="sep">✦</span>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="gallery-intro reveal">
+      <p class="section-label">120+ Photos on Google</p>
+      <h2 class="section-title">Explore the <em>Vibe</em></h2>
+    </div>
+  </div>
+
+  <!-- MASONRY GRID -->
+  <div class="gal-grid reveal">
+    <div class="g-item g-tall">
+      <div class="g-inner"><span>☕</span><p>Interior Vibes</p></div>
+      <div class="g-ov">View →</div>
+    </div>
+    <div class="g-item">
+      <div class="g-inner"><span>🌌</span><p>Galaxy Mocktail</p></div>
+      <div class="g-ov">View →</div>
+    </div>
+    <div class="g-item">
+      <div class="g-inner"><span>🍝</span><p>Pasta &amp; Mains</p></div>
+      <div class="g-ov">View →</div>
+    </div>
+    <div class="g-item g-wide">
+      <div class="g-inner"><span>🌙</span><p>Night Ambiance</p></div>
+      <div class="g-ov">View →</div>
+    </div>
+    <div class="g-item">
+      <div class="g-inner"><span>☀️</span><p>Daytime Seating</p></div>
+      <div class="g-ov">View →</div>
+    </div>
+    <div class="g-item">
+      <div class="g-inner"><span>🌶️</span><p>Honey Chilli</p></div>
+      <div class="g-ov">View →</div>
+    </div>
+    <div class="g-item g-tall2">
+      <div class="g-inner"><span>🧆</span><p>Falafel &amp; Pita</p></div>
+      <div class="g-ov">View →</div>
+    </div>
+    <div class="g-item">
+      <div class="g-inner"><span>📶</span><p>Work Corner</p></div>
+      <div class="g-ov">View →</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="gal-cta reveal">
+      <p>We add new photos regularly. Check out 120+ photos on Google Maps!</p>
+      <a href="https://maps.google.com/?q=Caff+Own+Coffee+Jagatpura+Jaipur" target="_blank" class="btn-orange">
+        View on Google Maps
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M3 7.5h9M8 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Caff <em>Own</em> Coffee</div>
+        <p>A cozy café in Jagatpura, Jaipur. Where every sip tells a story.</p>
+        <div class="footer-social">
+          <a href="https://www.zomato.com/jaipur/caff-own-coffee-jagatpura" target="_blank" class="soc-btn">Zomato</a>
+          <a href="https://www.justdial.com" target="_blank" class="soc-btn">JustDial</a>
+          <a href="tel:07727066475" class="soc-btn">Call Us</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <p>Central Spine, 08,<br/>Hare Krishna Marg,<br/>Jagatpura, Jaipur 302017</p>
+        <p style="margin-top:10px;color:var(--orange-lt);">077270 66475</p>
+      </div>
+    </div>
+    <div class="footer-btm">
+      <p>© 2025 Caff Own Coffee · Jaipur, Rajasthan</p>
+      <p>Made with ☕ in Jaipur</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
